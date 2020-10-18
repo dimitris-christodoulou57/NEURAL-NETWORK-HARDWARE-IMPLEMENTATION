@@ -1,0 +1,24 @@
+vhdtdtfi -lib work C:/Users/dimit/Documents/FPGA/MULTIPLIER/ReLu.v -lang verilog -prj MULTIPLIER -o ReLu.spl -module ReLu -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 ReLu.spl C:/Users/dimit/Documents/FPGA/MULTIPLIER/ReLu.sym 
+vhdtdtfi -lib work C:/Users/dimit/Documents/FPGA/MULTIPLIER/ReLu.v -lang verilog -prj MULTIPLIER -o ReLu.spl -module ReLu -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 ReLu.spl C:/Users/dimit/Documents/FPGA/MULTIPLIER/ReLu.sym 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/RELU.syr" 

@@ -1,0 +1,550 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: NEURON.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "NEURON.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "NEURON"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : NEURON
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "MULTIPLY6BIT.v" in library work
+Module <HA> compiled
+Module <FA> compiled
+Compiling verilog file "tanh.v" in library work
+Module <MYLTIPLY6BIT> compiled
+Compiling verilog file "sigmoid.v" in library work
+Module <TANH> compiled
+Compiling verilog file "ReLu.v" in library work
+Module <SIGMOID> compiled
+Compiling verilog file "ADDER.v" in library work
+Module <RELU> compiled
+Compiling verilog file "NEURON.v" in library work
+Module <ADDER> compiled
+Module <NEURON> compiled
+No errors in compilation
+Analysis of file <"NEURON.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <NEURON> in library <work>.
+
+Analyzing hierarchy for module <MYLTIPLY6BIT> in library <work>.
+
+Analyzing hierarchy for module <ADDER> in library <work>.
+
+Analyzing hierarchy for module <TANH> in library <work>.
+
+Analyzing hierarchy for module <SIGMOID> in library <work>.
+
+Analyzing hierarchy for module <RELU> in library <work>.
+
+Analyzing hierarchy for module <FA> in library <work>.
+
+Analyzing hierarchy for module <HA> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <NEURON>.
+Module <NEURON> is correct for synthesis.
+ 
+Analyzing module <MYLTIPLY6BIT> in library <work>.
+Module <MYLTIPLY6BIT> is correct for synthesis.
+ 
+Analyzing module <FA> in library <work>.
+Module <FA> is correct for synthesis.
+ 
+Analyzing module <HA> in library <work>.
+Module <HA> is correct for synthesis.
+ 
+Analyzing module <ADDER> in library <work>.
+Module <ADDER> is correct for synthesis.
+ 
+Analyzing module <TANH> in library <work>.
+Module <TANH> is correct for synthesis.
+ 
+Analyzing module <SIGMOID> in library <work>.
+Module <SIGMOID> is correct for synthesis.
+ 
+Analyzing module <RELU> in library <work>.
+Module <RELU> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <TANH>.
+    Related source file is "tanh.v".
+    Found 5-bit register for signal <ExponentOut>.
+    Found 6-bit register for signal <MantissaOut>.
+    Found 1-bit register for signal <SignOut>.
+    Found 6-bit comparator greatequal for signal <ExponentOut$cmp_ge0000> created at line 40.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <TANH> synthesized.
+
+
+Synthesizing Unit <SIGMOID>.
+    Related source file is "sigmoid.v".
+    Found 5-bit register for signal <ExponentOut>.
+    Found 6-bit register for signal <MantissaOut>.
+    Found 6-bit comparator greatequal for signal <ExponentOut$cmp_ge0000> created at line 79.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <SIGMOID> synthesized.
+
+
+Synthesizing Unit <RELU>.
+    Related source file is "ReLu.v".
+    Found 5-bit register for signal <ExponentOut>.
+    Found 6-bit register for signal <MantissaOut>.
+    Found 1-bit register for signal <SignOut>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+Unit <RELU> synthesized.
+
+
+Synthesizing Unit <FA>.
+    Related source file is "MULTIPLY6BIT.v".
+    Found 1-bit xor2 for signal <sum>.
+    Found 1-bit xor2 for signal <xout>.
+Unit <FA> synthesized.
+
+
+Synthesizing Unit <HA>.
+    Related source file is "MULTIPLY6BIT.v".
+    Found 1-bit xor2 for signal <sum>.
+Unit <HA> synthesized.
+
+
+Synthesizing Unit <MYLTIPLY6BIT>.
+    Related source file is "MULTIPLY6BIT.v".
+    Found 1-bit xor2 for signal <SignOut$xor0000>.
+Unit <MYLTIPLY6BIT> synthesized.
+
+
+Synthesizing Unit <ADDER>.
+    Related source file is "ADDER.v".
+    Found 6-bit register for signal <ExponentOut>.
+    Found 1-bit register for signal <SignOut>.
+    Found 12-bit register for signal <aa>.
+    Found 12-bit register for signal <bb>.
+    Found 6-bit register for signal <diff>.
+    Found 6-bit comparator equal for signal <diff$cmp_eq0000> created at line 43.
+    Found 6-bit comparator greater for signal <diff$cmp_gt0000> created at line 57.
+    Found 6-bit comparator greater for signal <diff$cmp_gt0001> created at line 50.
+    Found 6-bit subtractor for signal <diff$mux0000>.
+    Found 12-bit register for signal <ma>.
+    Found 12-bit shifter logical right for signal <ma$shift0001> created at line 60.
+    Found 12-bit register for signal <mb>.
+    Found 12-bit shifter logical right for signal <mb$shift0001> created at line 53.
+    Found 1-bit register for signal <mode>.
+    Found 12-bit comparator greater for signal <SignOut$cmp_gt0000> created at line 81.
+    Summary:
+	inferred  62 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <ADDER> synthesized.
+
+
+Synthesizing Unit <NEURON>.
+    Related source file is "NEURON.v".
+WARNING:Xst:646 - Signal <ExponentC3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ExponentC2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ExponentC1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <NEURON> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 6-bit subtractor                                      : 1
+# Registers                                            : 16
+ 1-bit register                                        : 4
+ 12-bit register                                       : 4
+ 5-bit register                                        : 3
+ 6-bit register                                        : 5
+# Comparators                                          : 6
+ 12-bit comparator greater                             : 1
+ 6-bit comparator equal                                : 1
+ 6-bit comparator greatequal                           : 2
+ 6-bit comparator greater                              : 2
+# Logic shifters                                       : 2
+ 12-bit shifter logical right                          : 2
+# Xors                                                 : 154
+ 1-bit xor2                                            : 154
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <ExponentOut_4> (without init value) has a constant value of 0 in block <inst4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ExponentOut_4> (without init value) has a constant value of 0 in block <inst5>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 6-bit subtractor                                      : 1
+# Registers                                            : 97
+ Flip-Flops                                            : 97
+# Comparators                                          : 6
+ 12-bit comparator greater                             : 1
+ 6-bit comparator equal                                : 1
+ 6-bit comparator greatequal                           : 2
+ 6-bit comparator greater                              : 2
+# Logic shifters                                       : 2
+ 12-bit shifter logical right                          : 2
+# Xors                                                 : 154
+ 1-bit xor2                                            : 154
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <ExponentOut_4> (without init value) has a constant value of 0 in block <TANH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ExponentOut_4> (without init value) has a constant value of 0 in block <SIGMOID>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <NEURON> ...
+
+Optimizing unit <RELU> ...
+
+Optimizing unit <MYLTIPLY6BIT> ...
+
+Optimizing unit <ADDER> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block NEURON, actual ratio is 12.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 95
+ Flip-Flops                                            : 95
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : NEURON.ngr
+Top Level Output File Name         : NEURON
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 85
+
+Cell Usage :
+# BELS                             : 510
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 68
+#      LUT2_D                      : 2
+#      LUT2_L                      : 2
+#      LUT3                        : 88
+#      LUT3_D                      : 3
+#      LUT3_L                      : 3
+#      LUT4                        : 254
+#      LUT4_D                      : 9
+#      LUT4_L                      : 16
+#      MUXCY                       : 29
+#      MUXF5                       : 26
+#      VCC                         : 1
+#      XORCY                       : 6
+# FlipFlops/Latches                : 95
+#      FDE                         : 60
+#      FDR                         : 24
+#      FDRS                        : 5
+#      FDRSE                       : 1
+#      FDS                         : 4
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 84
+#      IBUF                        : 48
+#      OBUF                        : 36
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                      244  out of   1920    12%  
+ Number of Slice Flip Flops:             95  out of   3840     2%  
+ Number of 4 input LUTs:                447  out of   3840    11%  
+ Number of IOs:                          85
+ Number of bonded IOBs:                  85  out of    173    49%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clock                              | BUFGP                  | 95    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 12.350ns (Maximum Frequency: 80.972MHz)
+   Minimum input arrival time before clock: 33.225ns
+   Maximum output required time after clock: 7.165ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 12.350ns (frequency: 80.972MHz)
+  Total number of paths / destination ports: 8164 / 118
+-------------------------------------------------------------------------
+Delay:               12.350ns (Levels of Logic = 6)
+  Source:            inst3/bb_0 (FF)
+  Destination:       inst4/ExponentOut_3 (FF)
+  Source Clock:      Clock rising
+  Destination Clock: Clock rising
+
+  Data Path: inst3/bb_0 to inst4/ExponentOut_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.720   1.246  inst3/bb_0 (inst3/bb_0)
+     LUT3_D:I0->O          4   0.551   0.943  inst3/inst100/carry1 (inst3/rca1)
+     LUT4:I3->O            1   0.551   0.827  inst4/SignOut_not0001_inv18_SW0 (N141)
+     LUT4:I3->O            1   0.551   0.996  inst4/SignOut_not0001_inv18 (inst4/SignOut_not0001_inv18)
+     LUT4:I1->O            2   0.551   1.072  inst4/SignOut_not0001_inv131 (inst4/SignOut_not0001_inv131)
+     LUT4:I1->O            1   0.551   0.869  inst4/SignOut_not0001_inv1127_SW0 (N64)
+     LUT3:I2->O           17   0.551   1.345  inst4/SignOut_not0001_inv2 (inst4/SignOut_not0001_inv)
+     FDR:R                     1.026          inst4/SignOut
+    ----------------------------------------
+    Total                     12.350ns (5.052ns logic, 7.298ns route)
+                                       (40.9% logic, 59.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock'
+  Total number of paths / destination ports: 932124 / 102
+-------------------------------------------------------------------------
+Offset:              33.225ns (Levels of Logic = 21)
+  Source:            MantissaA<0> (PAD)
+  Destination:       inst3/ma_1 (FF)
+  Destination Clock: Clock rising
+
+  Data Path: MantissaA<0> to inst3/ma_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.821   1.463  MantissaA_0_IBUF (MantissaA_0_IBUF)
+     LUT4:I0->O            3   0.551   1.246  inst1/inst37/carry1 (inst1/r1c<0>)
+     LUT4:I0->O            2   0.551   1.216  inst1/inst38/carry1 (inst1/r1c<1>)
+     LUT4:I0->O            3   0.551   1.246  inst1/inst39/Mxor_sum_Result1 (inst1/r1s<2>)
+     LUT4:I0->O            2   0.551   1.216  inst1/inst43/carry1 (inst1/r2c<1>)
+     LUT4:I0->O            3   0.551   1.246  inst1/inst44/Mxor_sum_Result1 (inst1/r2s<2>)
+     LUT4:I0->O            2   0.551   1.216  inst1/inst48/carry1 (inst1/r3c<1>)
+     LUT4:I0->O            3   0.551   1.246  inst1/inst49/Mxor_sum_Result1 (inst1/r3s<2>)
+     LUT4:I0->O            2   0.551   1.216  inst1/inst53/carry1 (inst1/r4c<1>)
+     LUT4:I0->O            3   0.551   1.246  inst1/inst54/Mxor_sum_Result1 (inst1/r4s<2>)
+     LUT4:I0->O            2   0.551   0.903  inst1/inst58/carry1 (inst1/r5c<1>)
+     LUT4:I3->O            2   0.551   0.903  inst1/inst59/carry1 (inst1/r5c<2>)
+     LUT4:I3->O            2   0.551   1.216  inst1/inst60/carry1 (inst1/r5c<3>)
+     LUT4:I0->O            2   0.551   1.216  inst1/inst61/Mxor_sum_Result1 (inst1/r5s<4>)
+     LUT4:I0->O            2   0.551   1.216  inst1/inst65/carry1 (inst1/r6c<3>)
+     LUT4:I0->O            5   0.551   1.116  inst1/inst66/Mxor_sum_Result1 (Mantissa1<10>)
+     LUT3_L:I1->LO         1   0.551   0.126  inst3/Sh9_SW0 (N50)
+     LUT4:I3->O            3   0.551   0.933  inst3/Sh9 (inst3/Sh9)
+     LUT4:I3->O            1   0.551   0.827  inst3/ma_mux0000<1>83 (inst3/ma_mux0000<1>83)
+     LUT4_L:I3->LO         1   0.551   0.168  inst3/ma_mux0000<1>121_SW0 (N158)
+     LUT4:I2->O            1   0.551   0.000  inst3/ma_mux0000<1>121 (inst3/ma_mux0000<1>)
+     FDE:D                     0.203          inst3/ma_1
+    ----------------------------------------
+    Total                     33.225ns (12.044ns logic, 21.181ns route)
+                                       (36.2% logic, 63.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 33 / 33
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            inst6/SignOut (FF)
+  Destination:       SignOut2 (PAD)
+  Source Clock:      Clock rising
+
+  Data Path: inst6/SignOut to SignOut2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.720   0.801  inst6/SignOut (inst6/SignOut)
+     OBUF:I->O                 5.644          SignOut2_OBUF (SignOut2)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.82 secs
+ 
+--> 
+
+Total memory usage is 4550132 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

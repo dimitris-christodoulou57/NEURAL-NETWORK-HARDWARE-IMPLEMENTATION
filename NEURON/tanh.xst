@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/dimit/Documents/FPGA/MULTIPLIER/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/dimit/Documents/FPGA/MULTIPLIER/xst"
+elaborate
+-ifn TANH.prj
+-ifmt mixed

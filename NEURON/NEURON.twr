@@ -1,0 +1,157 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml NEURON.twx NEURON.ncd -o NEURON.twr NEURON.pcf -ucf
+NEURON.ucf
+
+Design file:              NEURON.ncd
+Physical constraint file: NEURON.pcf
+Device,package,speed:     xc3s200,ft256,-4 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clock
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+ExponentA<0>|   18.304(R)|   -0.814(R)|Clock_BUFGP       |   0.000|
+ExponentA<1>|   18.112(R)|   -0.823(R)|Clock_BUFGP       |   0.000|
+ExponentA<2>|   16.140(R)|    0.300(R)|Clock_BUFGP       |   0.000|
+ExponentA<3>|   15.244(R)|   -0.750(R)|Clock_BUFGP       |   0.000|
+ExponentA<4>|   14.312(R)|   -0.619(R)|Clock_BUFGP       |   0.000|
+ExponentB<0>|   18.028(R)|   -0.579(R)|Clock_BUFGP       |   0.000|
+ExponentB<1>|   17.755(R)|   -0.787(R)|Clock_BUFGP       |   0.000|
+ExponentB<2>|   16.601(R)|   -0.263(R)|Clock_BUFGP       |   0.000|
+ExponentB<3>|   14.760(R)|   -0.173(R)|Clock_BUFGP       |   0.000|
+ExponentB<4>|   14.432(R)|   -0.257(R)|Clock_BUFGP       |   0.000|
+ExponentC<0>|   16.277(R)|    0.081(R)|Clock_BUFGP       |   0.000|
+ExponentC<1>|   16.458(R)|   -1.213(R)|Clock_BUFGP       |   0.000|
+ExponentC<2>|   15.153(R)|   -0.967(R)|Clock_BUFGP       |   0.000|
+ExponentC<3>|   15.085(R)|   -2.078(R)|Clock_BUFGP       |   0.000|
+ExponentC<4>|   13.729(R)|   -1.431(R)|Clock_BUFGP       |   0.000|
+ExponentD<0>|   16.395(R)|    0.123(R)|Clock_BUFGP       |   0.000|
+ExponentD<1>|   16.168(R)|   -0.981(R)|Clock_BUFGP       |   0.000|
+ExponentD<2>|   15.512(R)|   -1.053(R)|Clock_BUFGP       |   0.000|
+ExponentD<3>|   14.539(R)|   -1.521(R)|Clock_BUFGP       |   0.000|
+ExponentD<4>|   13.740(R)|   -1.366(R)|Clock_BUFGP       |   0.000|
+MantissaA<0>|   24.958(R)|   -1.130(R)|Clock_BUFGP       |   0.000|
+MantissaA<1>|   24.742(R)|   -1.339(R)|Clock_BUFGP       |   0.000|
+MantissaA<2>|   21.708(R)|   -1.605(R)|Clock_BUFGP       |   0.000|
+MantissaA<3>|   20.586(R)|   -2.027(R)|Clock_BUFGP       |   0.000|
+MantissaA<4>|   19.165(R)|   -2.269(R)|Clock_BUFGP       |   0.000|
+MantissaA<5>|   17.112(R)|   -1.252(R)|Clock_BUFGP       |   0.000|
+MantissaB<0>|   24.723(R)|   -1.003(R)|Clock_BUFGP       |   0.000|
+MantissaB<1>|   25.174(R)|   -1.536(R)|Clock_BUFGP       |   0.000|
+MantissaB<2>|   24.380(R)|   -1.234(R)|Clock_BUFGP       |   0.000|
+MantissaB<3>|   22.201(R)|   -2.055(R)|Clock_BUFGP       |   0.000|
+MantissaB<4>|   21.905(R)|   -1.890(R)|Clock_BUFGP       |   0.000|
+MantissaB<5>|   21.271(R)|   -2.292(R)|Clock_BUFGP       |   0.000|
+MantissaC<0>|   24.054(R)|   -0.805(R)|Clock_BUFGP       |   0.000|
+MantissaC<1>|   22.926(R)|   -1.740(R)|Clock_BUFGP       |   0.000|
+MantissaC<2>|   20.902(R)|   -2.772(R)|Clock_BUFGP       |   0.000|
+MantissaC<3>|   19.571(R)|   -2.747(R)|Clock_BUFGP       |   0.000|
+MantissaC<4>|   17.289(R)|   -2.480(R)|Clock_BUFGP       |   0.000|
+MantissaC<5>|   12.426(R)|   -1.508(R)|Clock_BUFGP       |   0.000|
+MantissaD<0>|   23.484(R)|   -0.878(R)|Clock_BUFGP       |   0.000|
+MantissaD<1>|   22.806(R)|   -1.576(R)|Clock_BUFGP       |   0.000|
+MantissaD<2>|   23.828(R)|   -2.489(R)|Clock_BUFGP       |   0.000|
+MantissaD<3>|   21.439(R)|   -2.825(R)|Clock_BUFGP       |   0.000|
+MantissaD<4>|   19.083(R)|   -2.064(R)|Clock_BUFGP       |   0.000|
+MantissaD<5>|   19.386(R)|   -2.560(R)|Clock_BUFGP       |   0.000|
+SignA       |    5.543(R)|    0.249(R)|Clock_BUFGP       |   0.000|
+SignB       |    5.570(R)|    0.057(R)|Clock_BUFGP       |   0.000|
+SignC       |    5.725(R)|   -1.322(R)|Clock_BUFGP       |   0.000|
+SignD       |    5.867(R)|   -0.878(R)|Clock_BUFGP       |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock Clock to Pad
+---------------+------------+------------------+--------+
+               | clk (edge) |                  | Clock  |
+Destination    |   to PAD   |Internal Clock(s) | Phase  |
+---------------+------------+------------------+--------+
+ExponentOut1<0>|   10.436(R)|Clock_BUFGP       |   0.000|
+ExponentOut1<1>|   10.094(R)|Clock_BUFGP       |   0.000|
+ExponentOut1<2>|    9.093(R)|Clock_BUFGP       |   0.000|
+ExponentOut1<3>|    9.400(R)|Clock_BUFGP       |   0.000|
+ExponentOut2<0>|    8.378(R)|Clock_BUFGP       |   0.000|
+ExponentOut2<1>|    8.413(R)|Clock_BUFGP       |   0.000|
+ExponentOut2<2>|    8.764(R)|Clock_BUFGP       |   0.000|
+ExponentOut2<3>|    8.731(R)|Clock_BUFGP       |   0.000|
+ExponentOut2<4>|    8.731(R)|Clock_BUFGP       |   0.000|
+ExponentOut<0> |   10.208(R)|Clock_BUFGP       |   0.000|
+ExponentOut<1> |   10.935(R)|Clock_BUFGP       |   0.000|
+ExponentOut<2> |   10.340(R)|Clock_BUFGP       |   0.000|
+ExponentOut<3> |    9.887(R)|Clock_BUFGP       |   0.000|
+MantissaOut1<0>|    9.828(R)|Clock_BUFGP       |   0.000|
+MantissaOut1<1>|    9.690(R)|Clock_BUFGP       |   0.000|
+MantissaOut1<2>|    9.387(R)|Clock_BUFGP       |   0.000|
+MantissaOut1<3>|    9.719(R)|Clock_BUFGP       |   0.000|
+MantissaOut1<4>|   10.233(R)|Clock_BUFGP       |   0.000|
+MantissaOut1<5>|   10.105(R)|Clock_BUFGP       |   0.000|
+MantissaOut2<0>|    9.357(R)|Clock_BUFGP       |   0.000|
+MantissaOut2<1>|   10.278(R)|Clock_BUFGP       |   0.000|
+MantissaOut2<2>|    9.722(R)|Clock_BUFGP       |   0.000|
+MantissaOut2<3>|    9.847(R)|Clock_BUFGP       |   0.000|
+MantissaOut2<4>|    9.830(R)|Clock_BUFGP       |   0.000|
+MantissaOut2<5>|    9.967(R)|Clock_BUFGP       |   0.000|
+MantissaOut<0> |   10.268(R)|Clock_BUFGP       |   0.000|
+MantissaOut<1> |    9.920(R)|Clock_BUFGP       |   0.000|
+MantissaOut<2> |    9.977(R)|Clock_BUFGP       |   0.000|
+MantissaOut<3> |   10.438(R)|Clock_BUFGP       |   0.000|
+MantissaOut<4> |    9.955(R)|Clock_BUFGP       |   0.000|
+MantissaOut<5> |    9.359(R)|Clock_BUFGP       |   0.000|
+SignOut        |   10.260(R)|Clock_BUFGP       |   0.000|
+SignOut2       |    8.769(R)|Clock_BUFGP       |   0.000|
+---------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |   10.548|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed Oct 03 18:09:02 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4490 MB
+
+
+

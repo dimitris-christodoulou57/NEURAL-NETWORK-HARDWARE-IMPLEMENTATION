@@ -1,0 +1,6 @@
+verilog work "MULTIPLY6BIT.v"
+verilog work "tanh.v"
+verilog work "sigmoid.v"
+verilog work "ReLu.v"
+verilog work "ADDER.v"
+verilog work "NEURON.v"

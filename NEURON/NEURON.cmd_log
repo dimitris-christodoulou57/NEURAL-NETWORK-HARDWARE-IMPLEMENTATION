@@ -1,0 +1,57 @@
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 NEURON.ngc NEURON.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o NEURON_map.ncd NEURON.ngd NEURON.pcf 
+par -w -intstyle ise -ol high -t 1 NEURON_map.ncd NEURON.ncd NEURON.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml NEURON.twx NEURON.ncd -o NEURON.twr NEURON.pcf 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 NEURON.ngc NEURON.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o NEURON_map.ncd NEURON.ngd NEURON.pcf 
+par -w -intstyle ise -ol high -t 1 NEURON_map.ncd NEURON.ncd NEURON.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml NEURON.twx NEURON.ncd -o NEURON.twr NEURON.pcf 
+bitgen -intstyle ise -f NEURON.ut NEURON.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 NEURON.ngc NEURON.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o NEURON_map.ncd NEURON.ngd NEURON.pcf 
+par -w -intstyle ise -ol high -t 1 NEURON_map.ncd NEURON.ncd NEURON.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml NEURON.twx NEURON.ncd -o NEURON.twr NEURON.pcf 
+bitgen -intstyle ise -f NEURON.ut NEURON.ncd 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc NEURON.ucf -p xc3s200-ft256-4 NEURON.ngc NEURON.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o NEURON_map.ncd NEURON.ngd NEURON.pcf 
+par -w -intstyle ise -ol high -t 1 NEURON_map.ncd NEURON.ncd NEURON.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml NEURON.twx NEURON.ncd -o NEURON.twr NEURON.pcf -ucf NEURON.ucf 
+bitgen -intstyle ise -f NEURON.ut NEURON.ncd 
+xst -intstyle ise -ifn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.xst" -ofn "C:/Users/dimit/Documents/FPGA/MULTIPLIER/NEURON.syr" 

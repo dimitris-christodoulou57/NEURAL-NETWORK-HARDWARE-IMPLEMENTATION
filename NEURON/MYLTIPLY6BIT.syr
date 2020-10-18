@@ -1,0 +1,331 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: MYLTIPLY6BIT.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MYLTIPLY6BIT.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MYLTIPLY6BIT"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : MYLTIPLY6BIT
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "MULTIPLY6BIT.v" in library work
+Module <HA> compiled
+Module <FA> compiled
+Module <MYLTIPLY6BIT> compiled
+No errors in compilation
+Analysis of file <"MYLTIPLY6BIT.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <MYLTIPLY6BIT> in library <work>.
+
+Analyzing hierarchy for module <FA> in library <work>.
+
+Analyzing hierarchy for module <HA> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <MYLTIPLY6BIT>.
+Module <MYLTIPLY6BIT> is correct for synthesis.
+ 
+Analyzing module <FA> in library <work>.
+Module <FA> is correct for synthesis.
+ 
+Analyzing module <HA> in library <work>.
+Module <HA> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <FA>.
+    Related source file is "MULTIPLY6BIT.v".
+    Found 1-bit xor2 for signal <sum>.
+    Found 1-bit xor2 for signal <xout>.
+Unit <FA> synthesized.
+
+
+Synthesizing Unit <HA>.
+    Related source file is "MULTIPLY6BIT.v".
+    Found 1-bit xor2 for signal <sum>.
+Unit <HA> synthesized.
+
+
+Synthesizing Unit <MYLTIPLY6BIT>.
+    Related source file is "MULTIPLY6BIT.v".
+    Found 1-bit xor2 for signal <SignOut$xor0000>.
+Unit <MYLTIPLY6BIT> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 65
+ 1-bit xor2                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 65
+ 1-bit xor2                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <MYLTIPLY6BIT> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MYLTIPLY6BIT, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MYLTIPLY6BIT.ngr
+Top Level Output File Name         : MYLTIPLY6BIT
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 44
+
+Cell Usage :
+# BELS                             : 80
+#      LUT2                        : 17
+#      LUT3                        : 6
+#      LUT4                        : 57
+# IO Buffers                       : 44
+#      IBUF                        : 24
+#      OBUF                        : 20
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       46  out of   1920     2%  
+ Number of 4 input LUTs:                 80  out of   3840     2%  
+ Number of IOs:                          44
+ Number of bonded IOBs:                  44  out of    173    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 31.664ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 38870 / 20
+-------------------------------------------------------------------------
+Delay:               31.664ns (Levels of Logic = 17)
+  Source:            MantissaA<0> (PAD)
+  Destination:       MantissaOut<11> (PAD)
+
+  Data Path: MantissaA<0> to MantissaOut<11>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.821   1.463  MantissaA_0_IBUF (MantissaA_0_IBUF)
+     LUT4:I0->O            3   0.551   1.246  inst37/carry1 (r1c<0>)
+     LUT4:I0->O            2   0.551   0.903  inst38/carry1 (r1c<1>)
+     LUT4:I3->O            3   0.551   1.246  inst39/Mxor_sum_Result1 (r1s<2>)
+     LUT4:I0->O            2   0.551   0.903  inst43/carry1 (r2c<1>)
+     LUT4:I3->O            3   0.551   1.246  inst44/Mxor_sum_Result1 (r2s<2>)
+     LUT4:I0->O            2   0.551   0.903  inst48/carry1 (r3c<1>)
+     LUT4:I3->O            3   0.551   1.246  inst49/Mxor_sum_Result1 (r3s<2>)
+     LUT4:I0->O            2   0.551   0.903  inst53/carry1 (r4c<1>)
+     LUT4:I3->O            3   0.551   1.246  inst54/Mxor_sum_Result1 (r4s<2>)
+     LUT4:I0->O            2   0.551   0.903  inst58/carry1 (r5c<1>)
+     LUT4:I3->O            2   0.551   0.903  inst59/carry1 (r5c<2>)
+     LUT4:I3->O            2   0.551   0.903  inst60/carry1 (r5c<3>)
+     LUT4:I3->O            2   0.551   1.216  inst61/Mxor_sum_Result1 (r5s<4>)
+     LUT4:I0->O            2   0.551   0.903  inst65/carry1 (r6c<3>)
+     LUT4:I3->O            1   0.551   0.801  inst66/carry1 (MantissaOut_11_OBUF)
+     OBUF:I->O                 5.644          MantissaOut_11_OBUF (MantissaOut<11>)
+    ----------------------------------------
+    Total                     31.664ns (14.730ns logic, 16.934ns route)
+                                       (46.5% logic, 53.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.63 secs
+ 
+--> 
+
+Total memory usage is 4550164 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,226 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml MYLTIPLY6BIT.twx MYLTIPLY6BIT.ncd -o MYLTIPLY6BIT.twr
+MYLTIPLY6BIT.pcf
+
+Design file:              MYLTIPLY6BIT.ncd
+Physical constraint file: MYLTIPLY6BIT.pcf
+Device,package,speed:     xc3s200,ft256,-4 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ExA<0>         |ExC            |   11.381|
+ExA<0>         |ExOut<0>       |    8.181|
+ExA<0>         |ExOut<1>       |    8.179|
+ExA<0>         |ExOut<2>       |    8.737|
+ExA<0>         |ExOut<3>       |    9.777|
+ExA<0>         |ExOut<4>       |   11.091|
+ExA<0>         |ExOut<5>       |   11.022|
+ExA<1>         |ExC            |   11.162|
+ExA<1>         |ExOut<1>       |    7.960|
+ExA<1>         |ExOut<2>       |    8.518|
+ExA<1>         |ExOut<3>       |    9.558|
+ExA<1>         |ExOut<4>       |   10.872|
+ExA<1>         |ExOut<5>       |   10.803|
+ExA<2>         |ExC            |   10.516|
+ExA<2>         |ExOut<2>       |    7.675|
+ExA<2>         |ExOut<3>       |    8.912|
+ExA<2>         |ExOut<4>       |   10.226|
+ExA<2>         |ExOut<5>       |   10.157|
+ExA<3>         |ExC            |    9.321|
+ExA<3>         |ExOut<3>       |    8.157|
+ExA<3>         |ExOut<4>       |    9.031|
+ExA<3>         |ExOut<5>       |    8.962|
+ExA<4>         |ExC            |    8.816|
+ExA<4>         |ExOut<4>       |    8.541|
+ExA<4>         |ExOut<5>       |    8.457|
+ExB<0>         |ExC            |   11.614|
+ExB<0>         |ExOut<0>       |    8.408|
+ExB<0>         |ExOut<1>       |    8.412|
+ExB<0>         |ExOut<2>       |    8.970|
+ExB<0>         |ExOut<3>       |   10.010|
+ExB<0>         |ExOut<4>       |   11.324|
+ExB<0>         |ExOut<5>       |   11.255|
+ExB<1>         |ExC            |   11.723|
+ExB<1>         |ExOut<1>       |    8.521|
+ExB<1>         |ExOut<2>       |    9.079|
+ExB<1>         |ExOut<3>       |   10.119|
+ExB<1>         |ExOut<4>       |   11.433|
+ExB<1>         |ExOut<5>       |   11.364|
+ExB<2>         |ExC            |   11.078|
+ExB<2>         |ExOut<2>       |    7.894|
+ExB<2>         |ExOut<3>       |    9.474|
+ExB<2>         |ExOut<4>       |   10.788|
+ExB<2>         |ExOut<5>       |   10.719|
+ExB<3>         |ExC            |    9.510|
+ExB<3>         |ExOut<3>       |    7.882|
+ExB<3>         |ExOut<4>       |    9.220|
+ExB<3>         |ExOut<5>       |    9.151|
+ExB<4>         |ExC            |    8.675|
+ExB<4>         |ExOut<4>       |    8.315|
+ExB<4>         |ExOut<5>       |    8.316|
+SignA          |SignOut        |    7.533|
+SignB          |SignOut        |    7.804|
+a<0>           |m<0>           |    9.388|
+a<0>           |m<1>           |    9.321|
+a<0>           |m<2>           |    9.875|
+a<0>           |m<3>           |   11.302|
+a<0>           |m<4>           |   13.582|
+a<0>           |m<5>           |   16.799|
+a<0>           |m<6>           |   19.379|
+a<0>           |m<7>           |   21.526|
+a<0>           |m<8>           |   23.033|
+a<0>           |m<9>           |   23.745|
+a<0>           |m<10>          |   25.081|
+a<0>           |m<11>          |   24.470|
+a<1>           |m<1>           |    7.531|
+a<1>           |m<2>           |   10.044|
+a<1>           |m<3>           |   11.242|
+a<1>           |m<4>           |   13.522|
+a<1>           |m<5>           |   16.739|
+a<1>           |m<6>           |   19.319|
+a<1>           |m<7>           |   21.466|
+a<1>           |m<8>           |   22.973|
+a<1>           |m<9>           |   23.685|
+a<1>           |m<10>          |   25.021|
+a<1>           |m<11>          |   24.410|
+a<2>           |m<2>           |   10.728|
+a<2>           |m<3>           |   11.068|
+a<2>           |m<4>           |   13.177|
+a<2>           |m<5>           |   16.394|
+a<2>           |m<6>           |   18.974|
+a<2>           |m<7>           |   21.121|
+a<2>           |m<8>           |   22.628|
+a<2>           |m<9>           |   23.340|
+a<2>           |m<10>          |   24.676|
+a<2>           |m<11>          |   24.065|
+a<3>           |m<3>           |    9.815|
+a<3>           |m<4>           |   11.169|
+a<3>           |m<5>           |   13.798|
+a<3>           |m<6>           |   16.378|
+a<3>           |m<7>           |   18.525|
+a<3>           |m<8>           |   20.032|
+a<3>           |m<9>           |   20.744|
+a<3>           |m<10>          |   22.080|
+a<3>           |m<11>          |   21.469|
+a<4>           |m<4>           |    9.765|
+a<4>           |m<5>           |   10.644|
+a<4>           |m<6>           |   12.998|
+a<4>           |m<7>           |   15.145|
+a<4>           |m<8>           |   16.652|
+a<4>           |m<9>           |   17.364|
+a<4>           |m<10>          |   18.700|
+a<4>           |m<11>          |   18.089|
+a<5>           |m<5>           |   10.124|
+a<5>           |m<6>           |   11.898|
+a<5>           |m<7>           |   13.371|
+a<5>           |m<8>           |   14.948|
+a<5>           |m<9>           |   15.660|
+a<5>           |m<10>          |   16.996|
+a<5>           |m<11>          |   16.385|
+b<0>           |m<0>           |    7.672|
+b<0>           |m<1>           |    7.725|
+b<0>           |m<2>           |   10.894|
+b<0>           |m<3>           |   12.092|
+b<0>           |m<4>           |   14.372|
+b<0>           |m<5>           |   17.589|
+b<0>           |m<6>           |   20.169|
+b<0>           |m<7>           |   22.316|
+b<0>           |m<8>           |   23.823|
+b<0>           |m<9>           |   24.535|
+b<0>           |m<10>          |   25.871|
+b<0>           |m<11>          |   25.260|
+b<1>           |m<1>           |    7.723|
+b<1>           |m<2>           |   10.175|
+b<1>           |m<3>           |   11.306|
+b<1>           |m<4>           |   13.586|
+b<1>           |m<5>           |   16.803|
+b<1>           |m<6>           |   19.383|
+b<1>           |m<7>           |   21.530|
+b<1>           |m<8>           |   23.037|
+b<1>           |m<9>           |   23.749|
+b<1>           |m<10>          |   25.085|
+b<1>           |m<11>          |   24.474|
+b<2>           |m<2>           |   10.171|
+b<2>           |m<3>           |   11.598|
+b<2>           |m<4>           |   13.878|
+b<2>           |m<5>           |   17.095|
+b<2>           |m<6>           |   19.675|
+b<2>           |m<7>           |   21.822|
+b<2>           |m<8>           |   23.329|
+b<2>           |m<9>           |   24.041|
+b<2>           |m<10>          |   25.377|
+b<2>           |m<11>          |   24.766|
+b<3>           |m<3>           |    9.429|
+b<3>           |m<4>           |   11.709|
+b<3>           |m<5>           |   14.972|
+b<3>           |m<6>           |   17.552|
+b<3>           |m<7>           |   19.699|
+b<3>           |m<8>           |   21.206|
+b<3>           |m<9>           |   21.918|
+b<3>           |m<10>          |   23.254|
+b<3>           |m<11>          |   22.643|
+b<4>           |m<4>           |   10.884|
+b<4>           |m<5>           |   14.298|
+b<4>           |m<6>           |   16.878|
+b<4>           |m<7>           |   19.025|
+b<4>           |m<8>           |   20.532|
+b<4>           |m<9>           |   21.244|
+b<4>           |m<10>          |   22.580|
+b<4>           |m<11>          |   21.969|
+b<5>           |m<5>           |   13.401|
+b<5>           |m<6>           |   15.981|
+b<5>           |m<7>           |   18.128|
+b<5>           |m<8>           |   19.635|
+b<5>           |m<9>           |   20.347|
+b<5>           |m<10>          |   21.683|
+b<5>           |m<11>          |   21.072|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Sep 21 17:29:50 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4489 MB
+
+
+

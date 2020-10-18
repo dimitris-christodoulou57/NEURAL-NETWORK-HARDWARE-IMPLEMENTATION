@@ -1,0 +1,8 @@
+verilog isim_temp "MULTIPLY6BIT.v"
+verilog isim_temp "tanh.v"
+verilog isim_temp "sigmoid.v"
+verilog isim_temp "ReLu.v"
+verilog isim_temp "ADDER.v"
+verilog isim_temp "NEURON.v"
+verilog isim_temp "TESTNEURON.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

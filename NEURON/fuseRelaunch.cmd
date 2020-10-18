@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/dimit/Documents/FPGA/MULTIPLIER/TESTTANH_isim_beh.exe" -prj "C:/Users/dimit/Documents/FPGA/MULTIPLIER/TESTTANH_beh.prj" "work.TESTTANH" "work.glbl" 

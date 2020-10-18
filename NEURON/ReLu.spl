@@ -1,0 +1,12 @@
+[Inputs]
+Sign
+=Exponent[5:0]=
+=Mantissa[11:0]=
+[Outputs]
+SignOut
+=ExponentOut[5:0]=
+=MantissaOut[11:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel ReLu
+
